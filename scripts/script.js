@@ -64,7 +64,7 @@ function game() {
         createPara(id, para)
     }
 
-    //print a result
+    //print the game result after 5 rounds
     gameResult = checkWinner();
     createPara("gameResult",gameResult);
     console.log(gameResult);
