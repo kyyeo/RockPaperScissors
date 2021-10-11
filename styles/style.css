@@ -15,6 +15,11 @@ body{
     text-align: center
 }
 
+ul {
+  text-align: center;
+  list-style: inside;
+}
+
 h3 {
     margin-top: 50px;
     margin-bottom: 0;
