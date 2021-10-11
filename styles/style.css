@@ -18,6 +18,7 @@ body{
 ul {
   text-align: center;
   list-style: inside;
+  margin: 0 auto;
 }
 
 h3 {
