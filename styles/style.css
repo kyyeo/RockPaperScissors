@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 0;
+
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+body{
+    margin: 0 auto;
+    text-align: center
+}
+
+h3 {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.container > div {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+.persona{
+    color: #44444A;
+}
+
+.header {
+    color: #B1CBE1;
+}
+
+.win {
+    background: green;
+    color: white;
+}
+
+.loss{
+    background: red;
+    color: white;
+}
+
+.draw {
+    background: grey;
+    color: white;
+}
+
+.result {
+    margin-top: 50px;
+}

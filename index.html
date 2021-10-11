@@ -5,9 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicTacToe</title>
+    <link rel='stylesheet' href='styles/style.css'>
 </head>
 <body>
-    <h1>Look in the browser console</h1>
+    <h1>A game of Tic Tac Toe</h1>
+    <ul>
+        <li>Results are logged to the console too</li>
+    </ul>
+
+    <h3>3x3 TicTacToe permutations</h3>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="persona">Computer:</div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div class="header">Rock</div>
+        <div class="header">Scissors</div>
+        <div class="header">Paper</div>
+        
+
+        <div></div>
+        <div class="header">Rock</div>
+        <div class="draw">Draw</div>
+        <div class="win">Win</div>
+        <div class="loss">Loss</div>
+
+        <div class="persona">Player:</div>
+        <div class="header">Scissors</div>
+        <div class="loss">Loss</div>
+        <div class="draw">Draw</div>
+        <div class="win">Win</div>
+
+        <div></div>
+        <div class="header">Paper</div>
+        <div class="win">Win</div>
+        <div class="loss">Loss</div>
+        <div class="draw">Draw</div>
+    </div>
+
+    <div class='results'>
+        <h3>Best of 5 rounds</h3>
+        <p id="1"></p>
+        <p id="2"></p>
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+        <p id="gameResult"></p>
+    </div>
     <script src=scripts/script.js></script>
 </body>
 </html>

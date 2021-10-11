@@ -58,11 +58,16 @@ function game() {
         const playerSelected = playerSelection();
 
         //play each round 
-        console.log("Round " + i + ": " + playRound(playerSelected, computerSelected));
+        let id = i.toString();
+        let para = "Round " + i + ": " + playRound(playerSelected, computerSelected);
+        console.log(para);
+        createPara(id, para)
     }
 
     //print a result
-    console.log(checkWinner());
+    gameResult = checkWinner();
+    createPara("gameResult",gameResult);
+    console.log(gameResult);
 }
 
 
@@ -70,7 +75,7 @@ function game() {
 function playerSelection(){
     let loop =true;
     while(loop){
-        const playerSelection = window.prompt("Rock? Paper? Scissors?", "Type Rock, Paper, or Scissors");
+        const playerSelection = window.prompt("Rock? Paper? Scissors?", "Rock");
         if (playerSelection.toLowerCase() === 'rock' || playerSelection.toLowerCase() === 'paper' || playerSelection.toLowerCase() === 'scissors'){
             loop=false;
             return playerSelection;
@@ -102,6 +107,14 @@ function checkWinner(){
     } else {
         return `Score is ${playerScore} (Player) : ${computerScore} (Computer) | No winner after 5 rounds!`;
     }
+}
+
+//print to <p> element in index.html
+function createPara(id, phrase) {
+    let para = document.createElement("P");
+    let text = document.createTextNode(phrase);
+    para.appendChild(text);
+    document.getElementById(id).appendChild(para);    
 }
 
 //play a game when index.html loads
