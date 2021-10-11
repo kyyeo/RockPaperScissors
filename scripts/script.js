@@ -118,4 +118,4 @@ function createPara(id, phrase) {
 }
 
 //play a game when index.html loads
-game()
+//game() //better to run function when <body> loads
