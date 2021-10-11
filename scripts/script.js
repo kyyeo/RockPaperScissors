@@ -100,9 +100,9 @@ function keepScore(winner){
 //helper function to check winner
 //first to 3 wins
 function checkWinner(){
-    if (playerScore === 3) {
+    if (playerScore >= 3) {
         return `Score is ${playerScore} (Player) : ${computerScore} (Computer) | Player wins!`;
-    } else if (computerScore === 3){
+    } else if (computerScore >= 3){
         return `Score is ${playerScore} (Player) : ${computerScore} (Computer) | Computer wins!`;
     } else {
         return `Score is ${playerScore} (Player) : ${computerScore} (Computer) | No winner after 5 rounds!`;
