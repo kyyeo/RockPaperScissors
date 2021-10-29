@@ -7,7 +7,7 @@
     <title>RockPaperScissors</title>
     <link rel='stylesheet' href='styles/style.css'>
 </head>
-<body onload="game()">
+<body>
     <h1>A game of Rock Paper Scissors</h1>
     <ul>
         <li>Results are logged to the console too</li>
@@ -47,14 +47,17 @@
         <div class="draw">Draw</div>
     </div>
 
+    <div class='buttons'>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+
+    <h3>Score</h3>
     <div class='results'>
-        <h3>Best of 5 rounds</h3>
-        <p id="1"></p>
-        <p id="2"></p>
-        <p id="3"></p>
-        <p id="4"></p>
-        <p id="5"></p>
-        <p id="gameResult"></p>
+        <div id="playerScore">10000</div>
+        <div id="computerScore">0</div>
+        <div id="gameResult">Winner winner chicken dinner!</div>
     </div>
     <script src=scripts/script.js></script>
 </body>

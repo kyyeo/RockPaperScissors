@@ -8,6 +8,22 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+
+    margin-bottom: 50px;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 0;
+
+    justify-items: stretch;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    margin-bottom: 50px;
 }
 
 body{
@@ -57,4 +73,29 @@ h3 {
 
 .result {
     margin-top: 50px;
+}
+
+.buttons {
+    margin-bottom: 50px;
+}
+
+#playerScore{
+    border: 1px black solid;
+    width: 40px;
+    
+    margin: 10px auto;
+}
+
+#computerScore{
+    border: 1px black solid;
+    width: 40px;
+    
+    margin: 10px auto;
+}
+
+#gameResult{
+    border: 1px black solid;
+    width: 400px;
+    padding: 50px;
+    margin: 10px auto;
 }
